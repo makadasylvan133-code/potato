@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+html, body, nav, header, main, footer, div, ul, li, h1, h3, p, a, button, img {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: radial-gradient(ellipse at center, 
+        rgba(192,169,145,1) 0%, 
+        rgba(192,169,145,1) 59%, 
+        rgba(168,143,121,1) 100%);
+    font: 14px 'Lato', sans-serif; 
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* 2. Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-primary {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button-cta a {
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    padding: 8px 22px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 900;
+    transition: all 0.2s ease;
+}
+
+.button-cta a:hover {
+    background-color: #ffffff;
+    color: #a88f79; 
+    border-color: #ffffff;
+}
+
+/* 3. Header Section */
+header {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 50px;
+}
+
+.header-potato {
+    max-width: 380px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.features {
+    background-color: #ffffff;
+    background-image: url('potatoes-bg.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    color: #333333;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.features-title {
+    font-size: 38px;
+    font-weight: 300;
+    color: #444444;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.features-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+    max-width: 520px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+
+.feature-potatoes {
+    max-width: 320px; 
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.buy-now {
+    background-color: #f9f9f9;
+    padding: 60px 20px 80px 20px;
+    text-align: center;
+}
+
+.order-title {
+    font-size: 38px;
+    font-weight: 300;
+    color: #555555;
+    margin-bottom: 50px;
+}
+
+.potato-types {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.potato {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.potato:last-child {
+    border-right: none;
+}
+
+.potato-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #444444;
+    margin-bottom: 30px;
+}
+
+.potato-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.potato-description {
+    font-size: 13px;
+    font-weight: 300;
+    color: #888888;
+    margin-bottom: 18px;
+}
+
+.btn-order {
+    background: transparent;
+    border: 1.5px solid #a4c639;
+    color: #a4c639;
+    border-radius: 20px;
+    padding: 8px 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+}
+
+.btn-order:hover {
+    background-color: #a4c639;
+    color: #ffffff;
+    border-color: #a4c639;
+}
+
+.potato-price {
+    font-size: 11px;
+    font-weight: 300;
+    color: #999999;
+    margin-bottom: 35px;
+}
+
+.potato-img {
+    max-height: 120px;
+    width: auto;
+    margin-top: auto;
+}
+
+/* 6. Footer Section */
+footer {
+    background-color: #a88f79; 
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
